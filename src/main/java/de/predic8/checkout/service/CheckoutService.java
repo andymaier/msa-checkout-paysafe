@@ -14,10 +14,14 @@ public class CheckoutService {
 	private final RestTemplate restTemplate;
 
 	public CheckoutService(RestTemplate restTemplate) {
+
+
 		this.restTemplate = restTemplate;
 	}
 
 	public boolean areArticlesAvailable(Basket basket) {
+
+		//Todo call to stock service
 		return true;
 	}
 }

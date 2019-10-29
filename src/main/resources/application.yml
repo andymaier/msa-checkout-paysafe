@@ -23,3 +23,9 @@ management:
     prometheus:
       enabled: true
 
+stock-server:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8081,localhost:9081,localhost:10081
+    ServerListRefreshInterval: 15000
